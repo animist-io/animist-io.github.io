@@ -27,6 +27,7 @@ a {
     }
 }
 
+
 h1,
 h2,
 h3,
@@ -40,6 +41,16 @@ p {
     font-size: 16px;
     line-height: 1.5;
     margin-bottom: 20px;
+}
+
+.mana {
+   transition: none;
+   color: white;
+   &:hover,
+   &:focus {
+      text-decoration: none;
+      color: $theme-primary;
+    }
 }
 
 .bg-primary {
@@ -336,7 +347,7 @@ header {
 
 // Contact
 #contact .fa {
-    color: $theme-dark;
+    color: white;
     font-size: 4em;
 }
 
@@ -367,4 +378,12 @@ img::-moz-selection {
 body {
     -webkit-tap-highlight-color: $theme-dark;
 }
+
+/*.img-responsive{
+   @media (max-width: 768px) {
+      -ms-transform: scale(0.5,0.5); 
+      -webkit-transform: scale(0.5,0.5); 
+      transform: scale(0.5,0.5) !important;
+    }   
+}*/
 
