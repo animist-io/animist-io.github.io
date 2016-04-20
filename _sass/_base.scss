@@ -43,13 +43,18 @@ p {
     margin-bottom: 20px;
 }
 
+p.larger{
+   font-size: 25px !important;
+}
+
 .mana {
    transition: none;
-   color: white;
+   color: $theme-primary;
    &:hover,
    &:focus {
-      text-decoration: none;
-      color: $theme-primary;
+      text-decoration: underline;
+      color: black;
+      opacity: .7;
     }
 }
 
@@ -91,6 +96,8 @@ aside {
       display: none;
    }  
 }
+
+
 
 // Navigation
 

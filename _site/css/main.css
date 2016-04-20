@@ -35,12 +35,16 @@ p {
   line-height: 1.5;
   margin-bottom: 20px; }
 
+p.larger {
+  font-size: 25px !important; }
+
 .mana {
   transition: none;
-  color: white; }
+  color: #E85901; }
   .mana:hover, .mana:focus {
-    text-decoration: none;
-    color: #E85901; }
+    text-decoration: underline;
+    color: black;
+    opacity: .7; }
 
 .bg-primary {
   background-color: #E85901; }
