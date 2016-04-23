@@ -69,38 +69,87 @@
     <div class="header-content">
         <div class="header-content-inner">
             
-              
-            <img class="graphic-small" src="../img/header_small.png"/>
-            <img class="graphic-large" src="../img/header2.png"/>
-         
-            <h1> 
-               <a href="http://maoridictionary.co.nz/word/3424" class="mana" target="_blank">mana</a> 
-                  irl
-            </h1>
+          <div class="row">   
+            <div class="col-lg-3 col-md-3 col-sm-3"></div>
+            <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+               <img class="img-responsive" src="../img/header3.png"/>
+            </div>
+            <div class="col-lg-3 col-md-3 col-sm-3"></div>
+          </div>
+          <div class="row">
             <br>
             <p class="larger">
-               Animist develops tools to enable <br> location-aware Ethereum contracts.
+               An open source project developing tools to enable location-aware Ethereum contracts. 
             </p>
             <a href="#about" class="btn btn-primary btn-xl page-scroll">Find Out More</a>
-        </div>
-    </div>
+         </div>
+      </div>
+   </div>
 </header>
 
   <section class="bg-primary" id="about">
     <div class="container">
         <div class="row">
             <div class="col-lg-8 col-lg-offset-2 text-center">
-                <h2 class="section-heading">In development Spring/Summer 2016</h2>
+                <h2 class="section-heading">Under construction Spring/Summer 2016</h2>
                 <hr class="light">
-                <p class="text-faded">Animist targets contracts with conditions about someone's presence at a place or proximity to a thing. Such conditions might be as simple as specifying that someone goes somewhere. Or they could be arbitrarily complex and require repeated appearances, define locations by type, have dynamic temporal constraints, request real-time sensor data from a mobile device and demand that certain parties be co-located in time. 
-                <br><br>
-                Components under development include mobile and IoT applications that can execute location contingent contract clauses without requiring a user's intentional engagement, and online tools to help people define and manage these on the Ethereum blockchain. </p>
-                <a href="#contact" class="btn btn-default btn-xl">Contact</a>
+                <p class="text-faded">
+                Components in development include mobile and IoT applications that can execute location contingent or proximity triggered contract clauses without requiring a user's intentional engagement, as well as online tools and an API to help people define and manage these on the Ethereum blockchain. </p>
             </div>
         </div>
     </div>
 </section>
 
+  <section id="components">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12 text-center">
+                <h2 class="section-heading">Components</h2>
+                <hr class="primary">
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-6 col-sm-6 col-xs-6 text-center">
+                <div class="service-box">
+                    <img src="../img/stack/pi_schematic.png" class="img-responsive"/> 
+                </div>
+            </div>
+            <div class="col-lg-6 col-sm-6 col-xs-6 text-center">
+                <div class="service-box">
+                  <a href="https://github.com/animist-io/whale-island" target="_blank">
+                     <h3> Whale Island </h3>
+                  </a>
+                  <p>
+                  An Ethereum node running on a Rasberry Pi which emits a 
+                  persistant BLE beacon signal and can automatically launch and connect to nearby Animist
+                  mobile clients. This component authenticates location events and can register them with relevant contracts on the blockchain.  
+                  </p>
+                </div>
+            </div>
+         </div>
+         <div class="row">
+            <div class="col-lg-6 col-sm-6 col-xs-6 text-center">
+                <div class="service-box">
+                  <a href="https://github.com/animist-io/wowshuxkluh" target="_blank">
+                     <h3> Wowshuxkluh </h3>
+                  </a>
+                  <p>
+                  An ethereum node running on a wifi connected Rasberry Pi which emits a 
+                  persistant iBeacon signal and can automatically launch and connect to nearby Animist
+                  mobile clients. This component authenticates location events and registers them with relevant contracts on the blockchain. 
+                  </p>
+                </div>
+            </div>
+            <div class="col-lg-6 col-sm-6 col-xs-6 text-center">
+                <div class="service-box">
+                    <img src="../img/stack/iphone.png" class="img-responsive"/> 
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
   <section id="services">
     <div class="container">
         <div class="row">
