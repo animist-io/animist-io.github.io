@@ -77,6 +77,20 @@ aside {
     .graphic-large {
       display: none; } }
 
+.call-to-action {
+  background-color: #20201C !important; }
+
+.center-phone {
+  transform: translateX(15%); }
+
+.vcenter {
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+  @media (min-width: 769px) {
+    .vcenter {
+      transform: translateY(20%); } }
+
 .navbar-default {
   background-color: white;
   border-color: rgba(34, 34, 34, 0.5);
@@ -145,7 +159,7 @@ header {
   background-size: cover;
   -o-background-size: cover;
   background-position: center;
-  background-color: #DCC720;
+  background-color: #B3B6B7;
   text-align: center;
   color: white; }
   header .header-content {
