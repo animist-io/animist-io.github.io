@@ -1,3 +1,15 @@
+/*
+Things to remember how to do:
+
+LIGHTEN BACKGROUND
+background: rgba( $theme-primary, .8 );
+
+BACKGROUND IMAGES
+@include background-cover;
+background-position: center;
+background-image: url('../img/header.jpg');
+
+*/
 html,
 body {
     height: 100%;
@@ -47,17 +59,6 @@ p.larger{
    font-size: 25px !important;
 }
 
-.mana {
-   transition: none;
-   color: $theme-primary;
-   &:hover,
-   &:focus {
-      text-decoration: underline;
-      color: black;
-      opacity: .7;
-    }
-}
-
 .bg-primary {
     background-color: $theme-primary;
 }
@@ -98,7 +99,6 @@ aside {
 }
 
 .call-to-action{
-   //background: rgba( $theme-primary, .8 );
    background-color: #20201C !important;
 }
 
@@ -112,6 +112,18 @@ aside {
    @media (min-width: 769px) {
       transform: translateY(20%);
    }
+}
+
+section.use-cases{
+   @include background-cover;
+    background-position: center;
+    background-image: linear-gradient( rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6) ), 
+                      url('../img/bridge.jpg');
+    color: white;
+}
+
+p.use-cases{
+
 }
 
 

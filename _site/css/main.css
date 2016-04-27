@@ -1,3 +1,15 @@
+/*
+Things to remember how to do:
+
+LIGHTEN BACKGROUND
+background: rgba( $theme-primary, .8 );
+
+BACKGROUND IMAGES
+@include background-cover;
+background-position: center;
+background-image: url('../img/header.jpg');
+
+*/
 html,
 body {
   height: 100%;
@@ -37,14 +49,6 @@ p {
 
 p.larger {
   font-size: 25px !important; }
-
-.mana {
-  transition: none;
-  color: #E85901; }
-  .mana:hover, .mana:focus {
-    text-decoration: underline;
-    color: black;
-    opacity: .7; }
 
 .bg-primary {
   background-color: #E85901; }
@@ -90,6 +94,15 @@ aside {
   @media (min-width: 769px) {
     .vcenter {
       transform: translateY(20%); } }
+
+section.use-cases {
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  -o-background-size: cover;
+  background-position: center;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("../img/bridge.jpg");
+  color: white; }
 
 .navbar-default {
   background-color: white;
