@@ -104,6 +104,10 @@ section.use-cases {
   background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("../img/bridge.jpg");
   color: white; }
 
+.use-case-icon {
+  color: rgba(232, 89, 1, 0.7);
+  margin: 0px; }
+
 .navbar-default {
   background-color: white;
   border-color: rgba(34, 34, 34, 0.5);
