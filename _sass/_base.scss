@@ -117,7 +117,7 @@ aside {
 section.use-cases{
    @include background-cover;
     background-position: center;
-    background-image: linear-gradient( rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6) ), 
+    background-image: linear-gradient( rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4) ), 
                       url('../img/bridge.jpg');
     color: white;
 }
@@ -128,9 +128,13 @@ p.use-cases{
 
 .use-case-icon{
    //color: rgb(168, 122, 113);
-   color: rgba($theme-primary, .7);
+   color: rgba($theme-primary, .9);
    margin: 0px;
 
+}
+
+.over{
+   z-index: 10;
 }
 
 
@@ -232,6 +236,7 @@ header {
         padding: 100px 15px 100px;
         width: 100%;
         .header-content-inner {
+            
             h1 {
                 font-weight: 700;
                 text-transform: uppercase;
