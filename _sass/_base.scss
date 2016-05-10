@@ -72,6 +72,12 @@ p.larger{
     color: rgba(white, .7);
 }
 
+.no-top-xs {
+   @media (max-width: 767px) {
+      margin-top: 0px !important;
+   }  
+}
+
 section {
     padding: 100px 0;
 }
@@ -114,11 +120,20 @@ aside {
    }
 }
 
-section.use-cases{
+section.use-case-a{
    @include background-cover;
     background-position: center;
     background-image: linear-gradient( rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4) ), 
                       url('../img/bridge.jpg');
+    color: white;
+}
+
+section.use-case-b{
+   @include background-cover;
+    background-position: center;
+    background-color: red;
+    background-image: linear-gradient( rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4) ), 
+                      url('../img/stack/ninja.png');
     color: white;
 }
 

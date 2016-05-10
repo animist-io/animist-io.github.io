@@ -31,7 +31,6 @@
     <!-- Custom CSS -->
     <link rel="stylesheet" href="css/main.css" type="text/css">
 
-
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
@@ -82,16 +81,16 @@
    <div class="header-content">
      
       <div class="header-content-inner">
-          <div class="cloud small cloud-1">
+          <div class="cloud small cloud-1 hidden-xs">
             <div></div><div></div><div></div><div></div>
          </div>
-         <div class="cloud normal cloud-2">
+         <div class="cloud normal cloud-2 hidden-xs">
             <div></div><div></div><div></div><div></div>
          </div>
-         <div class="cloud normal over cloud-3">
+         <div class="cloud normal over cloud-3 hidden-xs">
             <div></div><div></div><div></div><div></div>
          </div>
-         <div class="cloud tiny over cloud-4">
+         <div class="cloud tiny over cloud-4 hidden-xs">
             <div></div><div></div><div></div><div></div>
          </div>
           <div class="row">   
@@ -106,7 +105,7 @@
             <p class="larger">
                An open source project developing tools to enable location-aware Ethereum contracts. 
             </p>
-            <a href="#about" class="btn btn-primary btn-xl page-scroll">Find Out More</a>
+            <a href="#about" class="btn btn-primary btn-xl page-scroll hidden-xs">Find Out More</a>
          </div>
       </div>
    </div>
@@ -136,13 +135,24 @@
     </div>
     <div class="container">
          <div class="row">
-            <div class="col-lg-6 col-sm-6 col-xs-6 text-center">
+            <!-- Pi Image for larger screens -->
+            <div class="col-lg-6 col-sm-6 hidden-xs text-center">
                 <div class="service-box">
                     <img src="../img/stack/upbx.png" class="img-responsive"/> 
                 </div>
             </div>
-            <div class="col-lg-6 col-sm-6 col-xs-6 text-center vcenter">
+            <!-- Pi Image for smaller screens -->
+            <div class="col-xs-2 visible-xs text-center"></div>
+            <div class="col-xs-8 visible-xs text-center">
                 <div class="service-box">
+                    <img src="../img/stack/upbx.png" class="img-responsive"/> 
+                </div>
+            </div>
+            <div class="col-xs-2 visible-xs text-center"></div>
+
+            <!-- Whale Island description -->
+            <div class="col-lg-6 col-sm-6 col-xs-12 text-center vcenter ">
+                <div class="service-box no-top-xs">
                   <a href="https://github.com/animist-io/whale-island" target="_blank">
                      <h3> Whale Island </h3>
                   </a>
@@ -155,7 +165,14 @@
             </div>
          </div>
          <div class="row">
-            <div class="col-lg-6 col-sm-6 col-xs-6 text-center vcenter">
+            <!-- IPhone Image for smaller screens -->
+            <div class="col-xs-12 visible-xs">
+                <div class="service-box">
+                    <img src="../img/stack/iphone-horizontal.png" class="img-responsive"/> 
+                </div>
+            </div>
+            <!-- Wowshuxkluh description -->
+            <div class="col-lg-6 col-sm-6 col-xs-12 text-center vcenter">
                 <div class="service-box">
                   <a href="https://github.com/animist-io/wowshuxkluh" target="_blank">
                      <h3> Wowshuxkluh </h3>
@@ -165,21 +182,23 @@
                   </p>
                 </div>
             </div>
-            <div class="col-lg-1 col-sm-1 col-xs-1 text-center"></div>
-            <div class="col-lg-3 col-sm-3 col-xs-3 text-center">
+            <!-- IPhone Image for larger screens -->
+            <div class="col-lg-1 col-sm-1 hidden-xs text-center"></div>
+            <div class="col-lg-3 col-sm-3 hidden-xs text-center">
                 <div class="service-box center-phone">
                     <img src="../img/stack/iphone.png" class="img-responsive"/> 
                 </div>
             </div>
-            <div class="col-lg-1 col-sm-1 col-xs-1 text-center"></div>
+            <div class="col-lg-1 col-sm-1 hidden-xs text-center"></div>
         </div>
+
         <div class="row">
-            <div class="col-lg-6 col-sm-6 col-xs-6 text-center">
+            <div class="col-lg-6 col-sm-6 col-xs-12 text-center">
                 <div class="service-box">
                     <img src="../img/stack/network.png" class="img-responsive"/> 
                 </div>
             </div>
-            <div class="col-lg-6 col-sm-6 col-xs-6 text-center vcenter">
+            <div class="col-lg-6 col-sm-6 col-xs-12 text-center vcenter">
                 <div class="service-box">
                   <a href="https://github.com/animist-io/wallowa" target="_blank">
                      <h3> Wallowa </h3>
@@ -191,7 +210,16 @@
             </div>
          </div>
          <div class="row">
-            <div class="col-lg-6 col-sm-6 col-xs-6 text-center vcenter">
+            <!-- Pi Image for smaller screens -->
+            <div class="col-xs-2 visible-xs text-center"></div>
+            <div class="col-xs-8 visible-xs text-center">
+                <div class="service-box">
+                    <img src="../img/stack/wolves.jpg" class="img-responsive"/> 
+                </div>
+            </div>
+            <div class="col-xs-2 visible-xs text-center"></div>
+            <!-- Wolves description -->
+            <div class="col-lg-6 col-sm-6 col-xs-12 text-center vcenter">
                 <div class="service-box">
                   <a href="https://github.com/animist-io/wolves" target="_blank">
                      <h3> Wolves </h3>
@@ -201,7 +229,7 @@
                   </p>
                 </div>
             </div>
-            <div class="col-lg-6 col-sm-6 col-xs-6 text-center">
+            <div class="col-lg-6 col-sm-6 hidden-xs text-center">
                 <div class="service-box">
                     <img src="../img/stack/wolves.jpg" class="img-responsive"/> 
                 </div>
@@ -209,7 +237,7 @@
         </div>
     </div>
 </section>
-  <section id="usecases" class="use-cases">
+  <section id="usecases" class="use-case-a">
     <div class="container">
         <div class="row">
             <div class="col-lg-12 text-center">
@@ -221,29 +249,29 @@
     </div>
     <div class="container">
          <div class="row">
-            <div class="col-lg-1 col-sm-1 col-xs-0 text-center vcenter use-case-icon"> 
+            <div class="col-lg-1 col-sm-1 hidden-xs text-center vcenter use-case-icon"> 
                <i class="fa fa-map-marker fa-4x img-responsive "></i>
             </div>
             <div class="col-lg-11 col-sm-11 col-xs-11">
                <p>
-                  Two friends in New York who love to run decide to wager $20 on a foot race from the small bakery at 248 Broome Street in LES to the natural foods bodega across the Williamsburg Bridge at 282 Broadway. There's an app for that, called Human Race. Both locations host Animist enabled IOT nodes the app can tap into to detect their presence and execute conditional payment contracts on the Ethereum chain.
+                  Two runners in New York want to bet each other $20 on a race across the Williamsburg Bridge. There's an app for that: Human Race. It helps them find two Animist enabled locations near either end of the bridge - a small bakery in LES and a natural foods store on Broadway in Brooklyn. The app can tap into these IOT nodes to authenticate the runners' presence and execute conditional payment contracts on the Ethereum chain.
                <br>
                </p> 
             </div>
          </div>
          <div class="row">
-            <div class="col-lg-1 col-sm-1 col-xs-0 text-center vcenter use-case-icon"> 
+            <div class="col-lg-1 col-sm-1 hidden-xs text-center vcenter use-case-icon"> 
                <i class="fa fa-coffee fa-4x img-responsive "></i>
             </div>
             <div class="col-lg-11 col-sm-11 col-xs-11">
                <p>
-                  They meet at the bakery, eat a snack and register the bet through their phones. The app fires a starting shot.  Whoever reaches the bodega first is detected by its Animist endpoint and gets the $20 virtual wager automatically transferred to their virtual account. 
+                  They meet at the bakery and register the bet through their phones, transferring $20 from their digital wallets into an escrow contract. The app fires a starting shot.  Whoever reaches the natural foods store first is detected by its Animist endpoint and automatically gets the proceeds of the wager. 
                   <br>
                </p>
             </div>
          </div>
          <div class="row">
-            <div class="col-lg-1 col-sm-1 col-xs-0 text-center vcenter use-case-icon"> 
+            <div class="col-lg-1 col-sm-1 hidden-xs text-center vcenter use-case-icon"> 
                <i class="fa fa-gbp fa-4x img-responsive "></i>
             </div>
             <div class="col-lg-11 col-sm-11 col-xs-11">
@@ -366,6 +394,18 @@
 
 <!-- Custom Theme JavaScript -->
 <script src="js/creative.js"></script>
+
+<!-- Analytics --> 
+<script>
+     (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+     (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+     m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+     })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+     ga('create', 'UA-77539561-1', 'auto');
+     ga('send', 'pageview');
+
+</script>
 
 </body>
 
