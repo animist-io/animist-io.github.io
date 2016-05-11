@@ -122,6 +122,10 @@ section.use-case-b {
   color: rgba(232, 89, 1, 0.9);
   margin: 0px; }
 
+.component-icon {
+  color: black;
+  margin-left: 10px; }
+
 .over {
   z-index: 10; }
 
