@@ -55,9 +55,7 @@ p {
     margin-bottom: 20px;
 }
 
-p.larger{
-   font-size: 45px !important;
-}
+p.larger{ font-size: 45px !important; }
 
 .bg-primary {
     background-color: $theme-primary;
@@ -68,10 +66,8 @@ p.larger{
     color: white;
 }
 
-.text-faded {
-    color: rgba(white, .7);
-}
-
+.text-faded { color: rgba(white, .7);}
+//.opaque{ opacity: .7; }
 .no-top-xs {
    @media (max-width: 767px) {
       margin-top: 0px !important;
@@ -105,7 +101,9 @@ aside {
 }
 
 .call-to-action{
-   background-color: #20201C !important;
+   background-color: #eaeaea !important;
+   border-bottom: solid 2px #ddd;
+   //background-color: white !important;
 }
 
 .center-phone{
@@ -145,8 +143,11 @@ p.use-cases{
 
 }
 
+.github-text {
+    vertical-align: super !important;
+    text-transform: none !important;
+}
 .use-case-icon{
-   //color: rgb(168, 122, 113);
    color: rgba($theme-primary, .9);
    margin: 0px;
 
@@ -164,9 +165,8 @@ p.use-cases{
 
 
 // Navigation
-
 .navbar-default {
-
+    width: 100%;
     margin-bottom: 0 !important;
     border-color: rgba($theme-dark, .5);
     @include sans-serif-font;
@@ -266,70 +266,11 @@ p.use-cases{
     }
 }
 
-// Homepage Header
-/*
-header {
-    position: relative;
-    width: 100%;
-    min-height: auto;
-    @include background-cover;
-    background-position: center;
-    background-color: #B3B6B7;
-    text-align: center;
-    color: white;
-    .header-content {
-        position: relative;
-        text-align: center;
-        padding: 100px 15px 100px;
-        width: 100%;
-        .header-content-inner {
-            
-            h1 {
-                font-weight: 700;
-                text-transform: uppercase;
-                margin-top: 0;
-                margin-bottom: 0;
-            }
-            hr {
-                margin: 30px auto;
-            }
-            p {
-                font-weight: 300;
-                color: rgba(white, .7);
-                font-size: 16px;
-                margin-bottom: 50px;
-            }
-        }
+@media screen and (max-width: 768px) {
+    .jumbotron {
+        background-image: url(../img/jumbolightstone_s.png);
     }
-    @media (min-width: 768px) {
-        min-height: 100%;
-        //min-height: auto;
-        .header-content {
-            position: absolute;
-            top: 50%;
-            -webkit-transform: translateY(-50%);
-            -ms-transform: translateY(-50%);
-            transform: translateY(-50%);
-            padding: 0 50px;
-            .header-content-inner {
-                max-width: 1000px;
-                margin-left: auto;
-                margin-right: auto;
-                p {
-                    font-size: 18px;
-                    max-width: 80%;
-                    margin-left: auto;
-                    margin-right: auto;
-                }
-            }
-        }
-    }
-    @media (max-width: 767px) {
-      h1 {
-         font-size: 28px !important;
-      }
-    }
-}*/
+}
 
 // Sections
 
@@ -407,7 +348,8 @@ header {
 
 .call-to-action {
     color: rgb(93, 91, 85) !important;
-    background-color: #e6e6e6 !important;
+    background-color: #eaeaea !important;
+    border-bottom: solid 2px #ddd;
     h2 {
         margin: 0 auto 20px;
     }
