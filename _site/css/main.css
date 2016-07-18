@@ -231,6 +231,9 @@ section.call-to-action {
   .service-box p {
     margin-bottom: 0; }
 
+.service-box.wider {
+  margin: 10px auto 0; }
+
 .portfolio-box {
   position: relative;
   display: block;
