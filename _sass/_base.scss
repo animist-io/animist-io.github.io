@@ -17,7 +17,7 @@ body {
 }
 
 body {
-    @include serif-font;
+    @include sans-serif-font;
 }
 
 hr {
@@ -56,7 +56,7 @@ p {
 }
 
 p.larger{
-   font-size: 25px !important;
+   font-size: 45px !important;
 }
 
 .bg-primary {
@@ -137,6 +137,10 @@ section.use-case-b{
     color: white;
 }
 
+section.call-to-action {
+    padding: 50px 0;
+}
+
 p.use-cases{
 
 }
@@ -162,7 +166,8 @@ p.use-cases{
 // Navigation
 
 .navbar-default {
-    background-color: white;
+
+    margin-bottom: 0 !important;
     border-color: rgba($theme-dark, .5);
     @include sans-serif-font;
     @include transition-all;
@@ -204,17 +209,17 @@ p.use-cases{
         background-color: transparent;
         border-color: rgba(white, .3);
         .navbar-header .navbar-brand {
-            color: rgba(white, .7);
+            color: rgba(black, .7);
             &:hover,
             &:focus {
-                color: white;
+                color: black;
             }
         }
         .nav > li > a,
         .nav > li > a:focus {
-            color: rgba(white, .7);
+            color: rgba(black, .7);
             &:hover {
-                color: white;
+                color: black;
             }
         }
         &.affix {
@@ -239,8 +244,30 @@ p.use-cases{
     }
 }
 
-// Homepage Header
+@media screen and (min-width: 768px){
+    .jumbo_top {
+        font-size: 21px;
+        font-weight: 700;
+        padding-top: 125px;
+        padding-bottom: 60px;
+    }
+    .jumbo_top {
+        border-top: solid 2px #ddd;
+        border-bottom: solid 2px #ddd;
+    }
+    .jumbotron {
+        min-height: 400px;
+        background-image: url(../img/jumbolightstone.png);
+        background-size: cover;
+        padding-top: 30px;
+        padding-bottom: 30px;
+        margin: 0 !important;
+        color: #333;
+    }
+}
 
+// Homepage Header
+/*
 header {
     position: relative;
     width: 100%;
@@ -276,6 +303,7 @@ header {
     }
     @media (min-width: 768px) {
         min-height: 100%;
+        //min-height: auto;
         .header-content {
             position: absolute;
             top: 50%;
@@ -301,7 +329,7 @@ header {
          font-size: 28px !important;
       }
     }
-}
+}*/
 
 // Sections
 
@@ -378,8 +406,13 @@ header {
 }
 
 .call-to-action {
+    color: rgb(93, 91, 85) !important;
+    background-color: #e6e6e6 !important;
     h2 {
         margin: 0 auto 20px;
+    }
+    .text-faded {
+        color: rgb(93, 91, 85);
     }
 }
 
