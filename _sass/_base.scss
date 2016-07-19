@@ -268,11 +268,19 @@ section.call-to-action {
     }
 }
 
+// Phones
 @media screen and (max-width: 768px) {
     .jumbotron {
-        background-image: url(../img/jumbolightstone_s.png);
+        padding: 0px 15px;
+        background-image: url(../img/shard_med_dark.jpg);
+        color: #fff;
     }
+    section { padding: 25px 0; }
+    hr.divider { margin: 20px 0; }
+    p.larger { font-size: 32px !important; }
 }
+
+// Progress
 progress {
     background-color: #111 !important;
     border: 0;
