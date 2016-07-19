@@ -20,10 +20,25 @@ body {
     @include sans-serif-font;
 }
 
+
+// HR
 hr {
     border-color: $theme-primary;
     border-width: 3px;
     max-width: 50px;
+}
+
+hr.divider {
+    border-color: #eee;
+    border-width: 1px;
+    min-width: 100% !important;
+    margin: 40px 0;
+}
+hr.divider-thin{
+    border-color: $theme-primary;
+    border-width: 1px;
+    min-width: 100% !important;
+    margin: 20px 0;
 }
 
 hr.light {
@@ -49,14 +64,18 @@ h6 {
     @include sans-serif-font;
 }
 
+// -------------- Paragraphs --------------
 p {
     font-size: 16px;
     line-height: 1.5;
     margin-bottom: 20px;
 }
 
+p.type {}
+p.repo { font-style: italic; font-weight: 500;}
 p.larger{ font-size: 45px !important; }
 
+// -------------- Bkgrnds --------------
 .bg-primary {
     background-color: $theme-primary;
 }
@@ -66,25 +85,24 @@ p.larger{ font-size: 45px !important; }
     color: white;
 }
 
+
+// -------------- Text --------------
 .text-faded { color: rgba(white, .7);}
-//.opaque{ opacity: .7; }
+.opaque-5{ opacity: .5; }
+.opaque-7{ opacity: .7; }
+
+
 .no-top-xs {
    @media (max-width: 767px) {
       margin-top: 0px !important;
    }  
 }
 
-section {
-    padding: 100px 0;
-}
+// -------------- Layouts --------------
+section { padding: 100px 0; }
+aside { padding: 50px 0;}
 
-aside {
-    padding: 50px 0;
-}
-
-.no-padding {
-    padding: 0;
-}
+.no-padding { padding: 0; }
 
 .graphic-small {
    display: none;
@@ -100,12 +118,6 @@ aside {
    }  
 }
 
-.call-to-action{
-   background-color: #eaeaea !important;
-   border-bottom: solid 2px #ddd;
-   //background-color: white !important;
-}
-
 .center-phone{
    transform: translateX(15%);
 }
@@ -118,39 +130,30 @@ aside {
    }
 }
 
-section.use-case-a{
-   @include background-cover;
-    background-position: center;
-    background-image: linear-gradient( rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4) ), 
-                      url('../img/bridge.jpg');
-    color: white;
-}
-
-section.use-case-b{
-   @include background-cover;
-    background-position: center;
-    background-color: red;
-    background-image: linear-gradient( rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4) ), 
-                      url('../img/stack/ninja.png');
-    color: white;
+.call-to-action {
+    color: rgb(93, 91, 85) !important;
+    background-color: #eaeaea !important;
+    border-bottom: solid 2px #ddd;
+    h2 {
+        margin: 0 auto 20px;
+    }
+    .text-faded {
+        color: rgb(93, 91, 85);
+    }
 }
 
 section.call-to-action {
     padding: 50px 0;
 }
 
-p.use-cases{
-
-}
-
 .github-text {
     vertical-align: super !important;
     text-transform: none !important;
 }
+
 .use-case-icon{
    color: rgba($theme-primary, .9);
    margin: 0px;
-
 }
 
 .component-icon{
@@ -161,7 +164,6 @@ p.use-cases{
 .over{
    z-index: 10;
 }
-
 
 
 // Navigation
@@ -271,6 +273,25 @@ p.use-cases{
         background-image: url(../img/jumbolightstone_s.png);
     }
 }
+progress {
+    background-color: #111 !important;
+    border: 0;
+    vertical-align: middle;
+    height: 1.0em;
+    width: 100%;
+}
+
+progress::-webkit-progress-bar {
+    background-color: #d6d6d6;
+}
+
+progress::-webkit-progress-value {
+    background-color: #59584f;
+}
+
+progress::-moz-progress-bar {
+    background-color: #329ad1;
+}
 
 // Sections
 
@@ -350,17 +371,7 @@ p.use-cases{
     }
 }
 
-.call-to-action {
-    color: rgb(93, 91, 85) !important;
-    background-color: #eaeaea !important;
-    border-bottom: solid 2px #ddd;
-    h2 {
-        margin: 0 auto 20px;
-    }
-    .text-faded {
-        color: rgb(93, 91, 85);
-    }
-}
+
 
 // Bootstrap Overrides
 .text-primary {
@@ -427,11 +438,4 @@ body {
     -webkit-tap-highlight-color: $theme-dark;
 }
 
-/*.img-responsive{
-   @media (max-width: 768px) {
-      -ms-transform: scale(0.5,0.5); 
-      -webkit-transform: scale(0.5,0.5); 
-      transform: scale(0.5,0.5) !important;
-    }   
-}*/
 

@@ -64,9 +64,6 @@
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
             <ul class="nav navbar-nav navbar-right">
                 <li>
-                    <a class="page-scroll" href="#usecases">Use Cases</a>
-                </li>
-                <li>
                     <a class="page-scroll" href="#components">Components</a>
                 </li>
                 <li>
@@ -91,7 +88,6 @@
                available to smart-contracts with an Ethereum IoT client <br>
                and location oracle that serves mobile devices over Bluetooth BLE. 
           </p>
-          <p> <b> Project Status: </b> Early development, Spring/Summer 2016 </p>
           <br> 
           <a href="https://github.com/animist-io" class="btn btn-primary btn-xl page-scroll hidden-xs">
             <i class="fa fa-github fa-2x"></i> 
@@ -101,15 +97,49 @@
     </div>
  </div>
 
-  <section class="bg-primary call-to-action" id="usecases">
+  <section class="bg-primary call-to-action">
     <div class="container">
         <div class="row">
             <div class="col-lg-2 col-sm-2"> <img class="img-responsive opaque" src="../img/shard.jpg"/> </div>
             <div class="col-lg-10 col-sm-10">
-                <h2 class="section-heading">Under construction Spring/Summer 2016</h2>
-                <hr class="light">
-                <p class="text-faded">
-                Components in development include mobile and IoT applications that can execute location contingent or proximity triggered contract clauses without requiring a user's intentional engagement, as well as an API to help people define and manage these on the Ethereum blockchain. </p>
+                <h3 class="section-heading"> 
+                    <b> Project Status: </b> Early development, Spring/Summer 2016 
+                </h3>
+                <hr class="divider-thin"
+                <div class="container">
+                    <div class="row col-lg-10 col-md-10" >
+                        <span class="col col-lg-3 col-md-3 opaque-5"> <p class="repo"> /whale-island </p> </span>
+                        <span class="col col-lg-5 col-md-5 opaque-7"> <p class="type"> NodeJS Bluetooth server </p> </span>
+                        <span class="col col-lg-3 col-md-2 opaque-7"> <progress value="40" max="100">45%</progress></span>
+                        <span class="col col-lg-1 col-md-1 opaque-5">
+                            <img src="https://travis-ci.org/animist-io/whale-island.svg?branch=master"/>
+                        </span> 
+                    </div>
+                    <div class="row col-lg-10 col-md-10">
+                        <span class="col col-lg-3 col-md-3 opaque-5"> <p class="repo"> /wowshuxkluh </p> </span>
+                        <span class="col col-lg-5 col-md-5 opaque-7"> <p class="type"> Mobile client JS libraries </p> </span>
+                        <span class="col col-lg-3 col-md-2 opaque-7"> <progress value="60" max="100">59%</progress></span>
+                        <span class="col col-lg-1 col-md-1 opaque-5">
+                            <img src="https://travis-ci.org/animist-io/wowshuxkluh.svg?branch=master"/>
+                        </span> 
+                    </div>
+                    <div class="row col-lg-10 col-md-10">
+                        <span class="col col-lg-3 col-md-3 opaque-5"> <p class="repo"> /wallowa </p> </span>
+                        <span class="col col-lg-5 col-md-5 opaque-7"> <p class="type"> Solidity contracts repository </p> </span>
+                        <span class="col col-lg-3 col-md-2 opaque-7"> <progress value="30" max="100">30%</progress></span>
+                        <span class="col col-lg-1 col-md-1 opaque-5">
+                            <img src="https://travis-ci.org/animist-io/wallowa.svg?branch=master"/>
+                        </span> 
+                    </div>
+                    <div class="row col-lg-10 col-md-10">
+                        <span class="col col-lg-3 col-md-3 opaque-5"> <p class="repo"> /wolves </p> </span>
+                        <span class="col col-lg-5 col-md-5 opaque-7"> <p class="type"> Sample Ionic application </p> </span>
+                        <span class="col col-lg-3 col-md-2 opaque-7"> <progress value="0" max="100">0%</progress></span>
+                        <span class="col col-lg-1 col-md-1 opaque-5">
+                            <img src="https://travis-ci.org/animist-io/wolves.svg?branch=master"/>
+                        </span> 
+                    </div>
+                </div>
             </div>
         </div>
     </div>
@@ -120,7 +150,7 @@
         <div class="row">
             <div class="col-lg-12 text-center">
                 <h2 class="section-heading">Components</h2>
-                <hr class="primary">
+                <hr class="divider">
             </div>
         </div>
     </div>
@@ -159,6 +189,7 @@
                 </div>
             </div>
          </div>
+         <hr class="divider">
          <div class="row">
             <!-- IPhone Image for smaller screens -->
             <div class="col-xs-12 visible-xs">
@@ -194,7 +225,7 @@
             </div>
             <div class="col-lg-1 hidden-xs text-center"></div>
         </div>
-
+        <hr class="divider">
         <div class="row">
             <div class="col-lg-6 col-sm-6 col-xs-12 text-center">
                 <div class="service-box">
@@ -208,8 +239,8 @@
                   </a>
                   <p>
                   A repository of Solidity contracts written around Animist proximity events.
-                  A set of basic patterns and functions developers can adapt to generate
-                  location-contingent contracts.
+                  A set of basic patterns and functions developers can adapt to generate their
+                  own location-based contracts.
                   <hr> 
                   <b> Also contains: </b>
                   <li> Full Solidity unit tests written with Truffle. </li>
@@ -219,6 +250,7 @@
                 </div>
             </div>
          </div>
+         <hr class="divider">
          <div class="row">
             <!-- Wolves Image for smaller screens -->
             <div class="col-xs-2 visible-xs text-center"></div>
@@ -229,7 +261,7 @@
             </div>
             <div class="col-xs-2 visible-xs text-center"></div>
             <!-- Wolves description -->
-            <div class="col-lg-6 col-sm-6 col-xs-12 vcenter">
+            <div class="col-lg-6 col-sm-6 col-xs-12">
                 <div class="service-box">
                   <a href="https://github.com/animist-io/wolves" target="_blank">
                      <h3 class="text-center"> Wolves <i class="fa fa-github component-icon"></i> </h3>
@@ -267,12 +299,12 @@
            <div class="col-lg-4 col-sm-4"></div>
            <div class="col-lg-2 col-sm-2 text-center">
                <a href="mailto:christophergewecke@gmail.com">
-               <i class="fa fa-envelope-o fa-3x wow bounceIn" data-wow-delay=".1s"></i>
+               <i class="fa fa-envelope-o fa-3x"></i>
                </a>
            </div>
            <div class="col-lg-2 col-sm-2 text-center">
                <a href="https://github.com/animist-io">
-               <i class="fa fa-github fa-3x wow bounceIn" data-wow-delay=".1s"></i>
+               <i class="fa fa-github fa-3x"></i>
                </a>
            </div>
            <div class="col-lg-4 col-sm-4"></div>
