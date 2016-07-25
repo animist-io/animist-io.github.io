@@ -10,18 +10,14 @@ background-position: center;
 background-image: url('../img/header.jpg');
 
 */
+
+// --------------------  Top ------------------
 html,
-body {
-    height: 100%;
-    width: 100%;
-}
+body { height: 100%; width: 100%;}
+body { @include sans-serif-font;}
+h1, h2, h3, h4, h5, h6 { @include sans-serif-font; }
 
-body {
-    @include sans-serif-font;
-}
-
-
-// HR
+// --------------------  HR ------------------
 hr {
     border-color: $theme-primary;
     border-width: 3px;
@@ -45,6 +41,8 @@ hr.light {
     border-color: white;
 }
 
+
+// -------------- Links ------------------
 a {
     @include transition-all;
     color: $theme-primary;
@@ -54,15 +52,6 @@ a {
     }
 }
 
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-    @include sans-serif-font;
-}
 
 // -------------- Paragraphs --------------
 p {
@@ -86,16 +75,24 @@ p.larger{ font-size: 45px !important; }
 }
 
 
-// -------------- Text --------------
+// -------------- Text/Icons -----------
 .text-faded { color: rgba(white, .7);}
 .opaque-5{ opacity: .5; }
 .opaque-7{ opacity: .7; }
 
+.github-text {
+    vertical-align: super !important;
+    text-transform: none !important;
+}
 
-.no-top-xs {
-   @media (max-width: 767px) {
-      margin-top: 0px !important;
-   }  
+.use-case-icon{
+   color: rgba($theme-primary, .9);
+   margin: 0px;
+}
+
+.component-icon{
+   color: black;
+   margin-left: 10px;
 }
 
 // -------------- Layouts --------------
@@ -103,6 +100,13 @@ section { padding: 100px 0; }
 aside { padding: 50px 0;}
 
 .no-padding { padding: 0; }
+.over{ z-index: 10; }
+
+.no-top-xs {
+   @media (max-width: 767px) {
+      margin-top: 0px !important;
+   }  
+}
 
 .graphic-small {
    display: none;
@@ -130,6 +134,8 @@ aside { padding: 50px 0;}
    }
 }
 
+
+// ------------- Sections -------------
 .call-to-action {
     color: rgb(93, 91, 85) !important;
     background-color: #eaeaea !important;
@@ -146,27 +152,79 @@ section.call-to-action {
     padding: 50px 0;
 }
 
-.github-text {
-    vertical-align: super !important;
-    text-transform: none !important;
+.section-heading {
+    margin-top: 0;
 }
 
-.use-case-icon{
-   color: rgba($theme-primary, .9);
-   margin: 0px;
+// --------------Jumbotron -------------
+
+// Desktop
+@media screen and (min-width: 768px){
+    .jumbo_top {
+        font-size: 21px;
+        font-weight: 700;
+        padding-top: 125px;
+        padding-bottom: 60px;
+    }
+    .jumbo_top {
+        border-top: solid 2px #ddd;
+        border-bottom: solid 2px #ddd;
+    }
+    .jumbotron {
+        min-height: 400px;
+        background-image: url(../img/jumbolightstone_m.png);
+        background-size: cover;
+        padding-top: 30px;
+        padding-bottom: 30px;
+        margin: 0 !important;
+        color: #333;
+    }
 }
 
-.component-icon{
-   color: black;
-   margin-left: 10px;
+// Tablet
+@media screen and (max-width: 768px) {
+    .jumbotron {
+        background-image: url(../img/jumbolightstone_s.png);
+    }
 }
 
-.over{
-   z-index: 10;
+// Phones
+@media screen and (max-width: 414px) {
+    .jumbotron {
+        padding: 0px 15px;
+        background-image: url(../img/shard_red_light.jpg);
+        color: #333;
+    }
+    section { padding: 25px 0; }
+    hr.divider { margin: 20px 0; }
+    .jumbotron p { font-weight: 500 !important}
+    p.larger { font-size: 32px !important; }
+}
+
+// -------------  Progress ---------------------
+progress {
+    background-color: #111 !important;
+    border: 0;
+    vertical-align: middle;
+    height: 1.0em;
+    width: 100%;
 }
 
 
-// Navigation
+progress::-webkit-progress-bar {
+    background-color: #d6d6d6;
+}
+
+progress::-webkit-progress-value {
+    background-color: #59584f;
+}
+
+progress::-moz-progress-bar {
+    background-color: #329ad1;
+}
+
+
+// ---------- Creative Theme Stuff -----------
 .navbar-default {
     width: 100%;
     margin-bottom: 0 !important;
@@ -246,90 +304,6 @@ section.call-to-action {
     }
 }
 
-@media screen and (min-width: 768px){
-    .jumbo_top {
-        font-size: 21px;
-        font-weight: 700;
-        padding-top: 125px;
-        padding-bottom: 60px;
-    }
-    .jumbo_top {
-        border-top: solid 2px #ddd;
-        border-bottom: solid 2px #ddd;
-    }
-    .jumbotron {
-        min-height: 400px;
-        background-image: url(../img/jumbolightstone_m.png);
-        background-size: cover;
-        padding-top: 30px;
-        padding-bottom: 30px;
-        margin: 0 !important;
-        color: #333;
-    }
-}
-
-// Tablet
-@media screen and (max-width: 768px) {
-    .jumbotron {
-        background-image: url(../img/jumbolightstone_s.png);
-    }
-}
-
-// Phones
-@media screen and (max-width: 414px) {
-    .jumbotron {
-        padding: 0px 15px;
-        background-image: url(../img/shard_med_light.jpg);
-        color: #111;
-    }
-    section { padding: 25px 0; }
-    hr.divider { margin: 20px 0; }
-    p.larger { font-size: 32px !important; }
-}
-
-// Progress
-progress {
-    background-color: #111 !important;
-    border: 0;
-    vertical-align: middle;
-    height: 1.0em;
-    width: 100%;
-}
-
-progress::-webkit-progress-bar {
-    background-color: #d6d6d6;
-}
-
-progress::-webkit-progress-value {
-    background-color: #59584f;
-}
-
-progress::-moz-progress-bar {
-    background-color: #329ad1;
-}
-
-// Sections
-
-.section-heading {
-    margin-top: 0;
-}
-
-.service-box {
-
-    max-width: 400px;
-    margin: 50px auto 0;
-    @media (min-width: 992px) {
-        margin: 20px auto 0;
-    }
-    p {
-        margin-bottom: 0;
-    }
-}
-
-.service-box.wider {
-    margin: 10px auto 0;
-}
-
 .portfolio-box {
     position: relative;
     display: block;
@@ -386,7 +360,21 @@ progress::-moz-progress-bar {
     }
 }
 
+.service-box {
 
+    max-width: 400px;
+    margin: 50px auto 0;
+    @media (min-width: 992px) {
+        margin: 20px auto 0;
+    }
+    p {
+        margin-bottom: 0;
+    }
+}
+
+.service-box.wider {
+    margin: 10px auto 0;
+}
 
 // Bootstrap Overrides
 .text-primary {
