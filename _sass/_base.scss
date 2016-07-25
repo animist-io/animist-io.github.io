@@ -268,12 +268,19 @@ section.call-to-action {
     }
 }
 
-// Phones
+// Tablet
 @media screen and (max-width: 768px) {
     .jumbotron {
+        background-image: url(../img/jumbolightstone_s.png);
+    }
+}
+
+// Phones
+@media screen and (max-width: 414px) {
+    .jumbotron {
         padding: 0px 15px;
-        background-image: url(../img/shard_med_dark.jpg);
-        color: #fff;
+        background-image: url(../img/shard_med_light.jpg);
+        color: #111;
     }
     section { padding: 25px 0; }
     hr.divider { margin: 20px 0; }
