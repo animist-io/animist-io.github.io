@@ -197,13 +197,21 @@ section.call-to-action {
 @media screen and (max-width: 414px) {
     .jumbotron {
         padding: 0px 15px;
-        background-image: url(../img/shard_red_light.jpg);
-        color: #333;
+        background-image: url(../img/shard_dark2.jpg);
+        color: white; //#333
     }
+
+    li { font-size: 13px; }
     section { padding: 25px 0; }
     hr.divider { margin: 20px 0; }
-    .jumbotron p { font-weight: 500 !important}
-    p.larger { font-size: 32px !important; }
+    .jumbotron p { 
+        font-weight: 400;
+        text-align: center; 
+    }
+    p.larger { 
+        font-size: 35px !important;
+        font-weight: 500; 
+    }
 }
 
 // -------------  Progress ---------------------
